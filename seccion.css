@@ -1,0 +1,170 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo más oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #f9f9f9;
+    /* Fondo más claro y neutro */
+    padding: 30px;
+    /* Más espacio interior */
+    border-radius: 12px;
+    /* Bordes ligeramente más redondeados */
+    width: 90%;
+    max-width: 450px;
+    /* Ajuste del ancho máximo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Sombra más suave */
+    border: 1px solid #ddd;
+    /* Borde sutil */
+    text-align: center;
+    /* Centrar contenido */
+}
+
+.close {
+    color: #777;
+    /* Color más suave */
+    font-size: 24px;
+    /* Tamaño más pequeño */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* Transición suave en hover */
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+    /* Color más oscuro en hover */
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 22px;
+    /* Tamaño ligeramente reducido */
+    font-weight: normal;
+    /* Peso de fuente normal */
+    color: #444;
+    /* Color neutro */
+}
+
+.modal-content label {
+    display: block;
+    margin-top: 20px;
+    font-size: 13px;
+    /* Tamaño de texto más pequeño */
+    font-weight: normal;
+    /* Fuente normal */
+    color: #666;
+    /* Color más suave */
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="date"],
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="date"]:focus,
+.modal-content select:focus {
+    border-color: #007BFF;
+}
+
+.modal-content button[type="submit"] {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    .modal-content h2 {
+        font-size: 20px;
+    }
+
+    .modal-content label {
+        font-size: 12px;
+    }
+
+    .modal-content input[type="text"],
+    .modal-content input[type="date"],
+    .modal-content select {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .modal-content button[type="submit"] {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .close {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 15px;
+        max-width: 350px;
+    }
+
+    .modal-content h2 {
+        font-size: 18px;
+    }
+
+    .modal-content label {
+        font-size: 11px;
+    }
+
+    .modal-content input[type="text"],
+    .modal-content input[type="date"],
+    .modal-content select {
+        padding: 7px;
+        font-size: 12px;
+    }
+
+    .modal-content button[type="submit"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .close {
+        font-size: 20px;
+    }
+}
