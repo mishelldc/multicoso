@@ -1,4 +1,4 @@
-let  vinculo = document.querySelector(".root");
+let vinculo = document.querySelector(".root");
 
 
 vinculo.innerHTML = `
